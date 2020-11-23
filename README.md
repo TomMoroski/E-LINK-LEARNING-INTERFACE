@@ -12,3 +12,5 @@
 * Contains all needed javascript files
 
 ### NOTE: index.php is needed to deploy to HEROKU
+### HEROKU LINK :
+* https://e-link.herokuapp.com/index.html
