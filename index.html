@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+     <!-- Site Metas -->
+    <title>St.A's 8th Grade Math Home Page</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    
+</head>
+<body class="host_version"> 
+
+	<!-- Modal -->
+	<!-- This Modal button and section is for a student sign on ability -->
+	<!-- Ideally aking this interface further, the landing page should be the student sign in page -->
+	<!-- This will need to be connected to a database that stores student credentials -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header tit-up">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Student Login</h4>
+			</div>
+			<div class="modal-body student-box">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+					<li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+					<li><a href="#Registration" data-toggle="tab">Registration</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="Login">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email1" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="exampleInputPassword1" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="row">
+							<!-- This will also need to hook into the database backend so that an email can be looked up, once form is filled out -->
+								<div class="col-sm-10">
+									<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+										Submit
+									</button>
+									<a class="for-pwd" href="javascript:;">Forgot your password?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<!-- This below information will be the content that is sent to the db once filled out -->
+					<div class="tab-pane" id="Registration">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="mobile" placeholder="Mobile" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="password" placeholder="Password" type="password">
+								</div>
+							</div>
+							<div class="row">							
+								<div class="col-sm-10">
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Save &amp; Continue
+									</button>
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Cancel</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
+	
+	<!-- Start header -->
+	<!-- The header contains all necessary classroom sections such as the Syllabus, Course Units, Stem in Action, Higher Education and Auxilary Resources -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<!-- This will bring the user back to the top of landing page -->
+				<a class="navbar-brand" href="index.html">
+					
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				 <div class="collapse navbar-collapse" id="navbars-host">
+				 <!-- This begins the navbar selectable actions to the different pages -->
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="syllabus.html">Syllabus</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Course Units </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="course-grid-1.html">Course Units 1 - 6 </a>
+								<a class="dropdown-item" href="course-grid-2.html">Course Units 7 - 8 </a>
+								
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="articles.html">STEM IN Action</a></li>
+						
+						<li class="nav-item"><a class="nav-link" href="university.html">Higher Education</a></li>
+						<li class="nav-item"><a class="nav-link" href="resources.html">Auxilary Resources</a></li>
+						
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+			<!-- This line below is the Student Sign in section on the Navbar that refers to the various code sections above -->
+                        <li><a class="hover-btn-new log orange" href="#" data-toggle="modal" data-target="#login"><span>SIGN IN</span></a></li>
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	<!-- The Landing page was initially built to be a rotating images carousel the changed between 5 images of the school/classroom...etc -->
+	<!-- THis was later deemed not important -->
+	<div id="carouselExampleControls" class="carousel slide bs-slider box-slider" data-ride="carousel" data-pause="hover" data-interval="false" >
+		
+		<div class="carousel-inner" role="listbox">
+			<div class="carousel-item active">
+				<div id="home" class="first-section" style="background-image:url('images/albert.jpg');">
+					<div class="dtab">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 text-right">
+									<div class="big-tagline">
+										<h2><strong>ST. Albert's </strong>8th Grade Math</h2>		
+									</div>
+								</div>
+							</div>
+							<!-- end row -->            
+						</div>
+						<!-- end container -->
+					</div>
+				</div>
+				<!-- end section -->
+			</div>
+		</div>
+	</div>
+    <!-- This next section mirrors typical announcements that students might see hanging up around in person classrooms -->
+    <!-- Moving forward this will need to be easily edited by faculty/staff -->
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>Announcements</h3>
+                </div>
+            </div><!-- end title -->
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="welcome-message-box">
+                        <h4>2020 - 2021 School Year</h4>
+                        <h2>Welcome Back to School</h2>
+                        <p>Hello Students! Welcome back to school. This is going to be an exciting year. Im looking forward to meeting and getting to know everyone!</p>
+                        <p> It's been a fun summer with many adventures but I hope you are ready to get back and learn. There are a lot of exciting lessons and activities planned for this school year. Lets have a great year together! </p>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="post-media wow fadeIn">
+                        <img src="images/about_02.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+			</div>
+			<div class="row align-items-center">
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="post-media wow fadeIn">
+                        <img src="images/about_03.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="welcome-message-box">
+			<!-- THis below section is another block that will need to be reconstructed for ease of faculty/staff use -->
+                        <h2>Classroom Mantra</h2>
+                        <p>Hello Students! Just a few things to be aware of in this new online classroom.</p>
+			<p>1. Respect others</p>
+			<p>2. Stay on task</p>
+			<p>3. Your work should be your own</p>
+			<p>4. Follow all directions</p>
+			<p>5. Complete all assignments on time</p>
+			<p>6. If you ever have any questions or need help, always feel free to reach out</p>
+                    </div>
+			<!-- end messagebox -->
+                </div>
+			<!-- end col -->	
+            </div>
+			<!-- end row -->
+        </div>
+			<!-- end container -->
+    </div>
+			<!-- end section -->
+
+    
+
+
+    <!-- This Copyrights section will need be made more formal -->
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">                   
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2020 <a href="#">E-LINK</a> Interface by : <a>Tom Moroski</a></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+	
+</body>
+</html>

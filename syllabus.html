@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>St.A's 8th Grade Math</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+ 
+    
+
+</head>
+<body class="host_version"> 
+
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header tit-up">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Customer Login</h4>
+			</div>
+			<div class="modal-body student-box">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+					<li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+					<li><a href="#Registration" data-toggle="tab">Registration</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="Login">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email1" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="exampleInputPassword1" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-10">
+									<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+										Submit
+									</button>
+									<a class="for-pwd" href="javascript:;">Forgot your password?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane" id="Registration">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="mobile" placeholder="Mobile" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="password" placeholder="Password" type="password">
+								</div>
+							</div>
+							<div class="row">							
+								<div class="col-sm-10">
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Save &amp; Continue
+									</button>
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Cancel</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
+
+    <!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item active"><a class="nav-link" href="syllabus.html">SYLLABUS</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">COURSE UNITS </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="course-grid-1.html">Course Units 1 - 6 </a>
+								<a class="dropdown-item" href="course-grid-2.html">Course Units 7 - 8 </a>
+								
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="articles.html">STEM IN ACTION</a></li>
+						<li class="nav-item"><a class="nav-link" href="university.html">HIGHER EDUCATION</a></li>
+						<li class="nav-item"><a class="nav-link" href="resources.html">AUXILARY RESOURCES</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log" href="#" data-toggle="modal" data-target="#login"><span>SIGN IN</span></a></li>
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<div class="content-title-box">
+		<div class="container text-center">
+			<h1>8th Grade Math Syllabus<span class="m_1">All information related to our class</span></h1>
+		</div>
+	</div>
+    <!-- This is not the ideal format for this section -->
+    <!-- Moving forward we will want the ability for a PDF upload so that this can dynamically change year to year or even month to month --> 
+    <div id="overviews" class="section lb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <h3>CLASS INFORMATION</h3>
+                    <p class="lead">Class meets Monday - Thursday at first period and on Fridays during third period</p>
+		    <h3>Instructor Information</h3>
+		    <p style="text-align:left"> Instructor Name : Tom Moroski </p>
+		    <p style="text-align:left"> Room Number : 128 </p>	
+		    <p style="text-align:left"> Building : South Wing </p>
+		    <p style="text-align:left"> Phone : 123-456-7890 </p>
+		    <p style="text-align:left"> Instructor Email : tmoroski@Albert.edu </p>
+		    <p style="text-align:left"> Office Hours : Before or after school </p>
+		    <p style="text-align:left"> Textbook : Holt McDougal Mathematics Grade 8 </p>
+		    <h3>Supplies</h3>
+		    <p style="text-align:left"> 2 composition notebooks </p>
+		    <p style="text-align:left"> 2 packs of pencils </p>
+                    <p style="text-align:left"> Calculator </p>
+		    <h3>Grading Policy</h3>
+		    <p style="text-align:left"> Daily/ Activity Grade will be grades on unit activities, skill builders, textbook and any other classroom activities.  </p>
+		    <p style="text-align:left"> Quizzes will be given over a section(s) of material(s) covered and will consist of questions about daily assignments and classroom activities. They will be given every Friday.  </p>
+		    <p style="text-align:left"> Tests will be given during and after each unit. The questions will be free-response and multiple choice. Correcting your quizzes and daily assignments and studying them are essential for success on your all tests. Therefore, do not throw away any work.</p>
+		    <p style="text-align:left"> Late work will be penalized 10 points each day until it is turned in.  </p>
+		    <h3>Make-up Work</h3>
+		    <p style="text-align:left"> If you are absent for a quiz or test you should complete the make-up as soon as possible. If you are absent the day
+				before a quiz or test and return the day of the quiz or test, you WILL take the quiz or test with the rest of the
+				class. You are responsible for completing all work from the day you were absent. 
+		   </p>
+		   <h3>Re-Takes</h3>
+		   <p style="text-align:left">You may retake 1 failed quiz or test within ten days of receiving the failing grade. The new grade will
+			be an average of the new and old assignment.  
+		  </p>
+		  <h3>Progress Reports</h3>
+		  <p style="text-align:left">Progress reports will be given each nine weeks at the end of the third week to every student (passing or failing). </p>
+		  <h3>Class Curriculum</h3>
+		  <p style="text-align:left"> UNIT 1 : Refresher </p>
+		  <p style="text-align:left"> UNIT 2 : Real Numbers, Exponents/Scientific Notation and Proportional Relationships </p>
+ 		  <p style="text-align:left"> UNIT 3 : Nonproportional Relationships and Writing Linear Equations</p>
+		  <p style="text-align:left"> UNIT 4 : Functions, Solving Linear Equations and solving Systems of Linear Equations</p>
+		  <p style="text-align:left"> UNIT 5 : Transformations and Congruence / Transformations and Similarity</p>
+		  <p style="text-align:left"> UNIT 6 : Angle Relationships in Parallel Lines and Triangles / The Pythagorean Theorem</p>
+		  <p style="text-align:left"> UNIT 7 : Volume</p>
+		  <p style="text-align:left"> UNIT 8 : Advanced Topics</p>
+
+
+
+                </div>
+            </div>
+		<!-- end title -->
+    
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">                   
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2020 <a href="#">E-LINK</a> Design By : <a href="https://html.design/">Tom Moroski</a></p>
+                </div>
+            </div>
+        </div>
+		<!-- end container -->
+    </div>
+		<!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
